@@ -1,0 +1,20 @@
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Sibersozluk - JavaScript ile değişen sozler</title>
+    </head> 
+    <body>
+         <p id="content">Sözler 5 saniye ara ile belirecektir.</p>
+        <script>const content = document.getElementById("content")
+const a = ["Dünyada her şey için, medeniyet için, hayat için, başarı için, en hakiki mürşit bilimdir, fendir.", "Bir ulus, sımsıkı birbirine bağlı olmayı bildikçe yeryüzünde onu dağıtabilecek bir güç düşünülemez.", "Şuna inanmak gerekir ki, dünya yüzünde gördüğümüz her şey kadının eseridir.", "Taş kırılır, tunç erir ama Türklük ebedidir.", "Saygı ve özlemle... Mustafa Kemal Atatürk"]
+let i = 0
+setInterval(function(){
+    if (i >= a.length)
+    {
+        i = 0
+    }
+    content.innerHTML = a[i++]
+}, 5000)</script>
+    </body>
+</html>
